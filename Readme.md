@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Зверев](https://up.htmlacademy.ru/adaptive/13/user/570683).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Сенченко].
 
 ---
 
