@@ -2,25 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Мишка - интернет-магазин аксессуаров ручной работы для дома" width="86" height="35">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Мишка - интернет-магазин аксессуаров ручной работы для дома" width="86" height="35">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__navigation main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" class="site-list__link">Главная</a>
+              <a href="index.html" class="site-list__link">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог</a>
+            <li class="site-list__item ">
+              <a href="catalog.html" class="site-list__link">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Форма</a>
+              <a class="site-list__link">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item ">
+              <a href="catalog.html" class="site-list__link">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -40,78 +44,78 @@
           <legend class="filter-block__title">Тип</legend>
           <div class="filter-block__line">
             <input type="radio" id="type-1" name="type" value="accessory" class="filter-block__input">
-            <label for="type-1" class="filter-block__label filter-block__label--radio-checkbox">Аксессуар для интерьера</label>
+            <label for="type-1" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--radio">Аксессуар для интерьера</label>
           </div>
           <div class="filter-block__line">
             <input type="radio" id="type-2" name="type" value="toy" class="filter-block__input">
-            <label for="type-2" class="filter-block__label filter-block__label--radio-checkbox">Детская игрушка</label>
+            <label for="type-2" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--radio">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="filter-block">
           <legend class="filter-block__title">Цвет</legend>
           <div class="filter-block__line">
             <input type="checkbox" id="color-1" class="filter-block__input" name="white" checked>
-            <label for="color-1" class="filter-block__label filter-block__label--radio-checkbox">Белый</label>
+            <label for="color-1" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--checkbox">Белый</label>
           </div>
           <div class="filter-block__line">
             <input type="checkbox" id="color-2" class="filter-block__input" name="grey" checked>
-            <label for="color-2" class="filter-block__label filter-block__label--radio-checkbox">Серый</label>
+            <label for="color-2" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--checkbox">Серый</label>
           </div>
           <div class="filter-block__line">
             <input type="checkbox" id="color-3" class="filter-block__input" name="tiffany">
-            <label for="color-3" class="filter-block__label filter-block__label--radio-checkbox">«Тиффани»</label>
+            <label for="color-3" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--checkbox">«Тиффани»</label>
           </div>
           <div class="filter-block__line">
             <input type="checkbox" id="color-4" class="filter-block__input" name="black">
-            <label for="color-4" class="filter-block__label filter-block__label--radio-checkbox">Черный</label>
+            <label for="color-4" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--checkbox">Черный</label>
           </div>
           <div class="filter-block__line">
             <input type="checkbox" id="color-5" class="filter-block__input" name="pink">
-            <label for="color-5" class="filter-block__label filter-block__label--radio-checkbox">Розовый</label>
+            <label for="color-5" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--checkbox">Розовый</label>
           </div>
           <div class="filter-block__line">
             <input type="checkbox" id="color-6" class="filter-block__input" name="orange">
-            <label for="color-6" class="filter-block__label filter-block__label--radio-checkbox">Оранжевый</label>
+            <label for="color-6" class="filter-block__label filter-block__label--radio-checkbox filter-block__label--checkbox">Оранжевый</label>
           </div>
         </fieldset>
         <fieldset class="filter-block">
           <legend class="filter-block__title">ФИО</legend>
-          <div class="filter-block__line">
+          <div class="filter-block__line filter-block__line--text">
             <label for="text-1" class="filter-block__label filter-block__label--name">Имя:</label>
             <input type="text" id="text-1" name="name" class="filter-block__input filter-block__input--text" placeholder="Введите ваше имя*">
           </div>
-          <div class="filter-block__line">
+          <div class="filter-block__line filter-block__line--text">
             <label for="text-2" class="filter-block__label filter-block__label--name">Фамилия:</label>
             <input type="text" id="text-2" name="surname" class="filter-block__input filter-block__input--text" placeholder="Укажите фамилию*">
           </div>
-          <div class="filter-block__line">
+          <div class="filter-block__line filter-block__line--text">
             <label for="text-3" class="filter-block__label filter-block__label--name">Отчество:</label>
             <input type="text" id="text-3" name="patronymic" class="filter-block__input filter-block__input--text" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
         <fieldset class="filter-block">
           <legend class="filter-block__title">Тел</legend>
-          <div class="filter-block__line">
+          <div class="filter-block__line  filter-block__line--text filter-block__line--phone">
             <label for="text-phone" class="filter-block__label filter-block__label--phone-email">Телефон:</label>
-            <input type="text" id="text-phone" name="phone" class="filter-block__input filter-block__input--text icon icon--phone" placeholder="+7 ХХХ ХХ ХХ*">
+            <input type="text" id="text-phone" name="phone" class="filter-block__input filter-block__input--text filter-block__input--phone-email" placeholder="+7 ХХХ ХХ ХХ*">
           </div>
         </fieldset>
         <fieldset class="filter-block">
           <legend class="filter-block__title">E-mail</legend>
-          <div class="filter-block__line">
+          <div class="filter-block__line filter-block__line--text filter-block__line--email">
             <label for="text-phone" class="filter-block__label filter-block__label--phone-email">E-mail:</label>
-            <input type="text" id="text-phone" name="email" class="filter-block__input filter-block__input--text icon icon--envelope" placeholder="Ваш Email*">
+            <input type="text" id="text-phone" name="email" class="filter-block__input filter-block__input--text filter-block__input--phone-email" placeholder="Ваш Email*">
           </div>
         </fieldset>
 
         <fieldset class="filter-block">
           <legend class="filter-block__title">Доп</legend>
           <div class="filter-block__line">
-            <textarea id="comments" cols="30" rows="10" name="additional-comments" class="filter-block__textarea comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            <small class="comments__warning">*Поля обязательны для заполнения</small>
+            <textarea id="comments" cols="22" rows="10" name="additional-comments" class="filter-block__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <small class="filter-block__small">*Поля обязательны для заполнения</small>
           </div>
         </fieldset>
-        <input type="submit" class="filter-block__button" value="Отправить заказ">
+        <input type="submit" class="filter-block__button button" value="Отправить заказ">
       </form>
 
     </main>
@@ -134,7 +138,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+          <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
         </a>
       </div>
     </footer>
