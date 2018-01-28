@@ -62,8 +62,7 @@
   height: 36px;
 }
 
-#type-1:checked + .filter-block__label--radio::after,
-#type-2:checked + .filter-block__label--radio::after {
+.filter-block__label--radio:checked + .filter-block__label--radio::after {
   position: absolute;
   content: "";
   border-radius: 50%;
@@ -87,12 +86,7 @@
   height: 36px;
 }
 
-#color-1:checked + .filter-block__label--checkbox::after,
-#color-2:checked + .filter-block__label--checkbox::after,
-#color-3:checked + .filter-block__label--checkbox::after,
-#color-4:checked + .filter-block__label--checkbox::after,
-#color-5:checked + .filter-block__label--checkbox::after,
-#color-6:checked + .filter-block__label--checkbox::after {
+.filter-block__label--checkbox:checked + .filter-block__label--checkbox::after {
   position: absolute;
   content: "";
   background: url("../img/icon-tick.svg") no-repeat 0 -7px;
