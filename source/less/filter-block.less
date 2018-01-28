@@ -5,25 +5,28 @@
   padding-top: 20px;
   padding-bottom: 30px;
 }
+
 .filter-block__title {
   width: 64px;
   font-size: 17px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: rgb(99, 209, 187);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 0.941;
   text-align: left;
 
-  margin-left: 0px;
+  margin-left: 0;
 }
+
 .filter-block__input:not(.filter-block__input--text) {
   display: none;
 }
+
 .filter-block__label {
   display: inline-block;
   font-size: 17px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 18px;
@@ -36,14 +39,15 @@
   position: relative;
   padding-left: 56px;
 }
+
 .filter-block__label--radio {
   margin-bottom: 16px;
-
 }
+
 .filter-block__label--checkbox {
   margin-bottom: 32px;
-
 }
+
 .filter-block__label--radio::before {
   position: absolute;
   content: "";
@@ -52,11 +56,12 @@
   border-color: rgb(68, 68, 68);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
-  left: 0px;
+  left: 0;
   top: -9px;
   width: 36px;
   height: 36px;
 }
+
 #type-1:checked + .filter-block__label--radio::after,
 #type-2:checked + .filter-block__label--radio::after {
   position: absolute;
@@ -68,6 +73,7 @@
   width: 16px;
   height: 16px;
 }
+
 .filter-block__label--checkbox::before {
   position: absolute;
   content: "";
@@ -75,11 +81,12 @@
   border-width: 2px;
   border-color: rgb(68, 68, 68);
   background-color: rgba(255, 255, 255, 0);
-  left: 0px;
+  left: 0;
   top: -9px;
   width: 36px;
   height: 36px;
 }
+
 #color-1:checked + .filter-block__label--checkbox::after,
 #color-2:checked + .filter-block__label--checkbox::after,
 #color-3:checked + .filter-block__label--checkbox::after,
@@ -89,19 +96,21 @@
   position: absolute;
   content: "";
   background: url("../img/icon-tick.svg") no-repeat 0 -7px;
-  left:10px;
+  left: 10px;
   top: 3px;
   width: 22px;
   height: 16px;
 }
+
 .filter-block__label--name {
   display: block;
-
 }
+
 .filter-block__line {
-  margin-left: 0px;
+  margin-left: 0;
   position: relative;
 }
+
 .filter-block__line--text::after {
   position: absolute;
 
@@ -112,13 +121,10 @@
   bottom: 10px;
   left: 0;
 }
-.filter-block__label--phone-email {
-
-}
 
 .filter-block__input--text {
   font-size: 17px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.302);
   line-height: 18px;
   text-align: left;
@@ -134,6 +140,7 @@
   width: 256px;
   box-sizing: border-box;
 }
+
 .filter-block__line--phone::before {
   position: absolute;
   content: "";
@@ -143,6 +150,7 @@
   top: 40px;
   right: 8px;
 }
+
 .filter-block__line--email::before {
   position: absolute;
   content: "";
@@ -152,15 +160,16 @@
   top: 43px;
   right: 4px;
 }
+
 .filter-block__input--phone-email {
   box-sizing: border-box;
   padding-right: 40px;
 }
+
 .filter-block__textarea {
   margin: 0;
-  padding: 0;
   font-size: 17px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.302);
   line-height: 18px;
   text-align: left;
@@ -168,9 +177,10 @@
   width: 260px;
   box-sizing: border-box;
 }
+
 .filter-block__small {
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: rgb(68, 68, 68);
   line-height: 16px;
 }
