@@ -1,4 +1,5 @@
 /*//////////////////////модальное окно*/
+
 .modal {
   display: none;
   position: absolute;
@@ -6,7 +7,7 @@
   height: calc(4248px - 316px);
   top: 316px;
   left: 0;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   /*  display: none;*/
   z-index: 1;
 }
@@ -20,7 +21,7 @@
   padding: 31px 30px 45px;
   box-sizing: border-box;
   border-top: 1px solid #c6c6c6;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 2;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
@@ -39,7 +40,7 @@
   display: block;
   font-size: 15px;
   line-height: 30px;
-  color: #444;
+  color: #444444;
   text-align: center;
   margin: 0;
   margin-bottom: 23px;
@@ -54,8 +55,8 @@
 .modal__btn-size {
   flex-grow: 1;
   cursor: pointer;
-  color: #444;
-  border-color: rgba(68,68,68,0.1);
+  color: #444444;
+  border-color: rgba(68, 68, 68, 0.1);
 }
 
 .modal__btn-size:not(:last-child) {
@@ -63,24 +64,26 @@
 }
 
 .modal__btn-size:hover {
-  border-color: rgba(68,68,68,0.3);
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .modal__btn-size:active {
   border-color: #63d1bb;
 }
+
 .modal__button {
   background: #63d1bb;
   border: none;
   padding-top: 20px;
 }
+
 .modal__button:hover {
-  background-color: #444;
-  color: #fff;
+  background-color: #444444;
+  color: #ffffff;
 }
 
 .modal__button:active {
-  color: rgba(255, 255, 255, .7)
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .modal--visible {
@@ -99,6 +102,7 @@
     width: 566px;
     padding: 31px 105px 45px;
   }
+
   .modal__title {
     font-size: 30px;
     line-height: 57px;
@@ -106,6 +110,7 @@
     margin: 0;
     margin-bottom: 15px;
   }
+
   .modal__title br {
     display: none;
   }
@@ -117,14 +122,17 @@
     margin-bottom: 23px;
   }
 }
+
 @media (min-width: 1150px) {
   .modal {
     height: 3623px;
   }
+
   .modal__wrap {
     top: 1114px;
     padding: 31px 105px 45px;
   }
+
   .modal__title {
     font-size: 30px;
     line-height: 57px;

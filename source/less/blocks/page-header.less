@@ -3,6 +3,9 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .page-header__logo {
@@ -13,7 +16,6 @@
 
 .page-header__main-nav {
   order: 2;
-  min-width: 320px;
 }
 
 /*-----крестик и гамбургер------*/
@@ -36,7 +38,7 @@
     display: inline-block;
     width: 20px;
     height: 14px;
-    left: 70%;
+    right: 30px;
     top: 32px;
     background: transparent;
     border: 0;
@@ -98,10 +100,7 @@
   }
 }
 
-/*------*/
-
 .page-header__user-block {
-  min-height: 158px;
   order: 3;
 }
 
@@ -124,11 +123,11 @@
 .page-header__link {
   display: inline-block;
   width: 100%;
-  text-decoration: none;
-  color: black;
   font-size: 17px;
-  padding: 25px 0 26px calc((100% - 320px) / 2 + 76px);
   font-weight: bold;
+  color: black;
+  text-decoration: none;
+  padding: 25px 0 29px 75px;
 }
 
 .page-header__item-icon {
@@ -137,8 +136,16 @@
   width: 21px;
   height: 20px;
   opacity: 0.8;
-  left: calc(50% - 129px);
+  left: 30px;
   top: 30px;
+}
+
+.page-header__item-icon--search {
+  background: url("../../img/icon-search.svg") no-repeat 0 0;
+}
+
+.page-header__item-icon--cart {
+  background: url("../../img/icon-cart.svg") no-repeat 0 0;
 }
 
 .page-header__announce {
@@ -149,15 +156,6 @@
   display: none;
 }
 
-@media (min-width: 320px) {
-  .page-header__item-icon--search {
-    background: url("../img/icon-search.svg") no-repeat 0 0;
-  }
-
-  .page-header__item-icon--cart {
-    background: url("../img/icon-cart.svg") no-repeat 0 0;
-  }
-}
 
 @media (min-width: 768px) {
   .page-header {
@@ -182,7 +180,7 @@
 
   .page-header__user-block {
     order: 2;
-    min-height: 0px;
+    min-height: 0;
     flex-basis: calc(348px);
   }
 
@@ -254,7 +252,7 @@
   }
 
   .page-header__item-icon--cart {
-    left: 0px;
+    left: 0;
     top: 35px;
   }
 

@@ -1,71 +1,66 @@
-.page-form {
+.page-form__promo {
   width: 320px;
-  padding: 0 30px;
+  margin: 0 auto;
   box-sizing: border-box;
+  font-size: 27px;
+  line-height: 30px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 70px 30px 77px;
+  background: #f1f1f1;
 }
 
-.page-form__main-title {
-  margin: 0;
-  margin-left: -30px;
-  padding: 77px 38px 77px 30px;
+.page-form__intro-text {
   width: 320px;
-  text-align: center;
-  background-color: #f1f1f1;
+  margin: 0 auto;
   box-sizing: border-box;
+  font-size: 13px;
+  line-height: 24px;
+  color: rgb(68, 68, 68);
+  padding: 22px 30px 32px 30px;
 }
 
 @media (min-width: @tablet-width) {
   .page-form {
-    padding: 0;
-    width: 100%;
+    margin-top: -45px;
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
   }
 
-  .page-form__title-wrapper {
-    margin-bottom: 80px;
-    width: 100%;
-    background-color: #f1f1f1;
+  .page-form__promo {
+    width: auto;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 94px 0 80px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    background: #f1f1f1;
   }
 
-  .page-form__wrapper {
-    margin: 0 auto;
-    padding: 0 50px;
+  .page-form__intro-text {
     width: 768px;
-    box-sizing: border-box;
-  }
-
-  .page-form__grey-wrapper {
-    width: 100%;
-    background-color: #f1f1f1;
-  }
-
-  .page-form__main-title {
-    margin-left: 0;
-    padding: 108px 8px 75px 0;
-    width: 668px;
-  }
-
-  .page-form__wrapper--bottom {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    font-size: 17px;
+    line-height: 30px;
+    color: rgb(68, 68, 68);
+    padding: 73px 100px 44px 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-form__title-wrapper {
-    margin-bottom: 124px;
+  .page-form__promo {
+    width: auto;
+    font-size: 53px;
+    line-height: 57px;
+    padding: 94px 0 100px;
   }
 
-  .page-form__wrapper {
-    width: 1150px;
-  }
-
-  .page-form__main-title {
-    padding: 108px 8px 90px 0;
-    width: 1050px;
-  }
-
-  .page-form__wrapper--bottom {
-    padding: 0 175px;
+  .page-form__intro-text {
+    width: 768px;
+    font-size: 17px;
+    line-height: 30px;
+    color: rgb(68, 68, 68);
+    padding: 125px 50px 44px 32px;
   }
 }
