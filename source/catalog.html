@@ -7,38 +7,32 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="header__top-wrapper">
-        <div class="header__wrapper">
-          <a class="logo header__logo" href="index.html"><span class="visually-hidden">Логотип магазина "Мишка"</span></a>
-          <button class="button-menu header__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <ul class="top-menu top-menu--first header__top-menu header__top-menu--first">
-          <li class="top-menu__item top-menu__item--catalog">Каталог товаров</li>
-          <li class="top-menu__item top-menu__item--knitting-order">Вязание на заказ</li>
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img src="img/logo-mobile.svg" alt="Logo" width="86" height="36">
+      </a>
+      <nav class="page-header__main-nav main-nav  main-nav--closed  main-nav--nojs">
+        <button type="button" class="page-header__toggle">
+          <span></span>
+        </button>
+        <ul class="page-header__list page-header__list--main-nav">
+          <li class="page-header__item"><a class="page-header__link page-header__link--catalog" href="#">Каталог товаров</a></li>
+          <li class="page-header__item page-header__item--knotting"><a class="page-header__link page-header__link--knotting" href="#">Вязание на заказ</a></li>
         </ul>
-        <a class="logo-desktop header__logo-desktop" href="index.html">
-          <span class="visually-hidden">Логотип магазина "Мишка"</span>
-        </a>
-        <ul class="top-menu top-menu--second header__top-menu header__top-menu--second">
-          <li class="top-menu__item top-menu__item--search"><span class="top-menu__search-noview">Поиск по сайту</span>
-          </li>
-          <li class="top-menu__item top-menu__item--basket">Корзина: пока пуста</li>
-        </ul>
-      </div>
-      <div class="header__bottom-wrapper header__bottom-wrapper--page-catalog">
-        <ul class="top-menu top-menu--tablet header__top-menu header__top-menu--tablet">
-          <li class="top-menu__item top-menu__item--catalog">Каталог товаров</li>
-          <li class="top-menu__item top-menu__item--knitting-order">Вязание на заказ</li>
-        </ul>
-        <ul class="top-menu top-menu--desktop header__top-menu header__top-menu--desktop">
-          <li class="top-menu__item top-menu__item--new">Новые поступления</li>
-          <li class="top-menu__item top-menu__item--sale">Распродажа</li>
-        </ul>
-        <ul class="top-menu top-menu--delivery header__top-menu header__top-menu--delivery">
-          <li class="top-menu__item top-menu__item--delivery">Бесплатная доставка по России</li>
+      </nav>
+      <div class="page-header__user-block">
+        <ul class="page-header__list page-header__list--user-block">
+          <li class="page-header__item page-header__item--search"><a class="page-header__link page-header__link--search" href="#"><span class="page-header__item-icon page-header__item-icon--search"></span>Поиск по сайту</a></li>
+          <li class="page-header__item page-header__item--cart"><a class="page-header__link page-header__link--cart" href="#"><span class="page-header__item-icon page-header__item-icon--cart"></span>Корзина: пока пуста</a></li>
         </ul>
       </div>
+      <span class="page-header__announce">Бесплатная доставка по России</span>
+      <nav class="page-header__hot">
+        <ul>
+          <li><a href="#">Новые постуления</a></li>
+          <li><a href="#">Распродажа</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="page-catalog">
       <div class="page-catalog__title-wrapper">
@@ -124,45 +118,56 @@
           </div>
         </section>
       </div>
-      <div class="modal-order">
-        <h2 class="modal-title modal-order__modal-title">Добавить в корзину</h2>
-        <p class="modal-order__choose-size">Выберите размер:</p>
-        <ul class="modal-order__sizes">
-          <li class="modal-order__size">S</li>
-          <li class="modal-order__size">M</li>
-          <li class="modal-order__size modal-order__size--L">L</li>
-        </ul>
-        <button class="modal-button-order modal-order__button-order" type="button">Добавить</button>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <a class="footer__logo"><span class="visually-hidden">Логотип магазина "Мишка"</span></a>
-        <ul class="footer__social-contacts social-contacts">
-          <li class="social-contacts__point">
-            <a class="social-contacts__button social-contacts__button--insta" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-              <img src="img/icon-insta.svg">
-            </a>
-          </li>
-          <li class="social-contacts__point">
-            <a class="social-contacts__button social-contacts__button--fb" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-              <img src="img/icon-fb.svg">
-            </a>
-          </li>
-          <li class="social-contacts__point">
-            <a class="social-contacts__button social-contacts__button--tw" href="#">
-              <span class="visually-hidden">Твиттер</span>
-              <img src="img/icon-twitter.svg">
-            </a>
-          </li>
-        </ul>
-        <div class="footer__wrapper-bottom">
-          <p class="footer__copyright">Разработано</p>
-          <img src="img/logo-htmlacademy.svg">
+      <div class="modal">
+        <div class="modal__wrap">
+          <h2 class="modal__title">Добавить <br>в корзину</h2>
+          <span class="modal__subtitle">Выберите размер:</span>
+          <div class="modal__sizes">
+            <span class="modal__btn-size  button">S</span>
+            <span class="modal__btn-size  button">M</span>
+            <span class="modal__btn-size  button">L</span>
+          </div>
+          <button type="button" class="modal__button button">Добавить</button>
         </div>
       </div>
+    </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__title">Подписывайтесь на нас в соцсетях:</h2>
+      <a href="index.html" class="page-footer__logo">
+        <img src="img/logo-mobile.svg" alt="">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__icon social__icon--instagram" href="instagram.html">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__icon social__icon--facebook" href="facebook.html">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__icon social__icon--twitter" href="twitter.html">Твиттер</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="30" height="40">
+        </a>
+      </div>
     </footer>
+    <div class="modal">
+      <div class="modal__wrap">
+        <h2 class="modal__title">Добавить <br>в корзину</h2>
+        <span class="modal__subtitle">Выберите размер:</span>
+        <div class="modal__sizes">
+          <span class="modal__btn-size  button">S</span>
+          <span class="modal__btn-size  button">M</span>
+          <span class="modal__btn-size  button">L</span>
+        </div>
+        <button type="button" class="modal__button button">Добавить</button>
+      </div>
+    </div>
+    <script src="js/my.js"></script>
   </body>
 </html>
