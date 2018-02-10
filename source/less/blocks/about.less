@@ -1,0 +1,66 @@
+.about-us {
+  padding: 36px 30px 10px 30px;
+}
+
+.about-us__main-title {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.about-us__advantages {
+  .lists();
+}
+
+.about-us__advantage {
+  padding: 17px 6px 17px 0;
+  width: 260px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    padding: 60px 0 54px 0;
+  }
+
+  .about-us__main-title {
+    font-size: 43px;
+  }
+
+  .about-us__advantages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 419px;
+  }
+
+  .about-us__advantage {
+    padding: 66px 6px 27px 0;
+    width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    padding: 74px 10px 86px 175px;
+  }
+
+  .about-us__main-title {
+    font-size: 53px;
+  }
+
+  .about-us__advantages {
+    height: 514px;
+  }
+
+  .about-us__advantage {
+    padding: 59px 6px 60px 0;
+    width: 350px;
+  }
+}
