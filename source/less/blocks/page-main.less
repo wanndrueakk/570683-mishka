@@ -1,0 +1,203 @@
+.page-main {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 100%;
+  }
+
+  .page-main__wrapper {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 768px;
+    box-sizing: border-box;
+  }
+
+  .page-main__upper {
+    margin: 0 auto;
+    padding-right: 50px;
+    width: 768px;
+    box-sizing: border-box;
+  }
+
+  .page-main__upper--our-contacts {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    width: 1150px;
+  }
+
+  .page-main__upper {
+    width: 1150px;
+  }
+
+  .page-main__upper--our-contacts {
+    padding: 0 50px;
+  }
+}
+
+//
+.week-good {
+  padding: 35px 30px 40px 30px;
+}
+
+.week-good__main-title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding-left: 2px;
+  font-size: 25px;
+}
+
+.week-good__addition {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.week-good__description {
+  margin-bottom: 17px;
+  width: 252px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.week-good__good-characters {
+  .lists();
+}
+
+.week-good__image {
+  margin-top: 27px;
+}
+
+.week-good__price {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 26px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.week-good__button-order {
+  margin: 0;
+  padding: 13px 10px 11px 10px;
+}
+
+.week-good__tablet-wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .week-good {
+    padding: 0;
+  }
+
+  .week-good__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
+
+  .week-good__main-title {
+    margin-bottom: 0;
+    padding-top: 59px;
+    padding-right: 73px;
+    padding-left: 0;
+    font-size: 43px;
+    box-sizing: border-box;
+  }
+
+  .week-good__addition {
+    margin-bottom: 0;
+    padding-top: 59px;
+    padding-left: 68px;
+    padding-right: 26px;
+    width: 73px;
+  }
+
+  .week-good__description {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 284px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-good__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
+
+  .week-good__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 291px;
+  }
+
+  .week-good__image {
+    display: none;
+  }
+
+  .week-good__price {
+    margin-top: 58px;
+    margin-bottom: 37px;
+    font-size: 20px;
+  }
+
+  .week-good__tablet-wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-good {
+    padding-top: 73px;
+    background-image: url("../img/triple-set-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right 73px;
+  }
+
+  .week-good__desktop-image {
+    display: block;
+  }
+
+  .week-good__top-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 72px;
+  }
+
+  .week-good__main-title {
+    order: 2;
+    padding-top: 67px;
+    font-size: 53px;
+  }
+
+  .week-good__addition {
+    padding-top: 69px;
+    padding-left: 46px;
+    padding-right: 53px;
+    width: 75px;
+  }
+
+  .week-good__inner-wrapper {
+    margin-left: 125px;
+  }
+
+  .week-good__tablet-wrapper {
+    display: none;
+  }
+}

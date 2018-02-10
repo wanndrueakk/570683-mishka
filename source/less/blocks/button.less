@@ -1,0 +1,65 @@
+.button {
+  display: block;
+  width: 255px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #505050;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 175px;
+    font-size: 17px;
+  }
+}
+
+.button-buy {
+  display: block;
+  background-color: #ffffff;
+  border: none;
+}
+
+.button-menu {
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-color: #ffffff;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .button-menu {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.button-order {
+  display: block;
+  width: 255px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #505050;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}

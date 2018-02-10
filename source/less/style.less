@@ -1,104 +1,30 @@
-/* Файл variables.less */
-
-@bg-darkgrey: #292929;
-@bg-lightgrey: #f8f5f2;
-@shadow-grey: #ececec;
-@btn-green: #56c3b2;
-// hover, active 46c1ae + footer logo hover, active (o:0.3)
-@btn-lightgreen: #63d1bb;
-// hover, active 59d5bc
-@checked: #62d1ba;
-
-@tablet-width: 768px;
-@desktop-width: 1150px;
-
-/* Файл scaffolding.less */
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans Regular"),
-    local("OpenSans-Regular"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"),
-    local("OpenSans-Bold"),
-    url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-}
-
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 1.6;
-  /*  background: #292929 url("../mish ka-index-mobile--menu.jpg") no-repeat 50% 0;*/
-}
-
-body a {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 15px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  position: absolute;
-}
-
-/* Файл mixins.less */
-
-.no-outline() {
-  outline: none;
-  background: transparent;
-
-  &::before {
-    display: none;
-  }
-}
-
-.hide() {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.list-reset() {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.link-reset() {
-  text-decoration: none;
-  color: inherit;
-}
-
-@import "page-header.less"
-  @import "page-main.less"
-  @import "page-footer.less"
-  @import "form.less"
+//@import "normalize.less";
+@import "fonts.less";
+@import "commons.less";
+@import "variables.less";
+@import "mixins.less";
+@import "blocks/page-header.less";
+@import "blocks/logo.less";
+@import "blocks/button.less";
+@import "blocks/top-menu.less";
+@import "blocks/page-main.less";
+@import "blocks/menu.less";
+@import "blocks/main-title.less";
+@import "blocks/site-list.less";
+@import "blocks/good_c.less";
+@import "blocks/modal.less";
+@import "blocks/about.less";
+@import "blocks/feedback.less";
+@import "blocks/slider.less";
+@import "blocks/button.less";
+@import "blocks/title.less";
+@import "blocks/contacts.less";
+@import "blocks/social.less";
+@import "blocks/page-catalog.less";
+@import "blocks/goods.less";
+@import "blocks/catalog.less";
+@import "blocks/page-form.less";
+@import "blocks/filter-block.less";
+@import "blocks/form.less";
+@import "blocks/page-footer.less";
+@import "blocks/all.less";

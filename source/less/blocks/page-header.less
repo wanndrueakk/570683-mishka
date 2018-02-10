@@ -1,0 +1,147 @@
+.header {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 30px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  margin: 21px 60px 20px 80px;
+  padding: 0;
+}
+
+.header__button {
+  margin: 30px 0 30px 0;
+  padding: 0;
+}
+
+.header__logo-desktop {
+  display: none;
+}
+
+.header__top-menu {
+  display: block;
+}
+
+.header__top-menu--tablet {
+  display: none;
+}
+
+.header__top-menu--desktop {
+  display: none;
+}
+
+.header__top-menu--delivery {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    margin-bottom: -65px;
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .header__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 768px;
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  .header__wrapper {
+    display: none;
+  }
+
+  .header__logo-desktop {
+    display: block;
+    margin: 21px 20px 20px 0;
+  }
+
+  .header__top-menu {
+    display: flex;
+  }
+
+  .header__top-menu--first {
+    display: none;
+  }
+
+  .header__top-menu--second {
+    display: flex;
+  }
+
+  .header__bottom-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 768px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+
+  .header__bottom-wrapper--page-catalog {
+    background-color: #f1f1f1;
+  }
+
+  .header__top-menu--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    margin-bottom: -69px;
+  }
+
+  .header__top-wrapper {
+    justify-content: flex-start;
+    width: 1150px;
+  }
+
+  .header__logo-desktop {
+    margin: 5px 0;
+  }
+
+  .header__top-menu {
+    display: flex;
+  }
+
+  .header__top-menu--first {
+    display: flex;
+  }
+
+  .header__bottom-wrapper {
+    justify-content: space-between;
+    width: 1150px;
+  }
+
+  .header__bottom-wrapper--page-catalog {
+    background-color: #f1f1f1;
+  }
+
+  .header__top-menu--tablet {
+    display: none;
+  }
+
+  .header__top-menu--desktop {
+    display: flex;
+  }
+
+  .header__top-menu--delivery {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,139 @@
+.form__filter {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.form__filter--extra {
+  margin-bottom: 16px;
+}
+
+.form__title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-right: 28px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__filter-list {
+  .lists();
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form__name-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__letter {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  width: 256px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #000000;
+}
+
+.form__button {
+  margin: 32px 0 55px 0;
+  padding: 16px 10px;
+  width: 260px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 100%;
+  }
+
+  .form__filter {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    border-top: none;
+  }
+
+  .form__filter--extra {
+    margin-bottom: 0;
+  }
+
+  .form__title {
+    padding-top: 66px;
+    padding-right: 105px;
+  }
+
+  .form__filter-wrapper {
+    margin-top: -46px;
+    margin-left: auto;
+    width: 501px;
+  }
+
+  .form__name-label {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .form__letter {
+    .input-special-field();
+    padding: 15px 16px;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+
+  .form__text {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__button {
+    margin: 0;
+    margin-bottom: 50px;
+    width: 229px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__title {
+    padding-top: 62px;
+    padding-left: 60px;
+    padding-right: 65px;
+  }
+
+  .form__filter-list {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .form__filter-wrapper {
+    margin-right: auto;
+    margin-left: 175px;
+    width: 703px;
+  }
+
+  .form__letter {
+    width: 700px;
+  }
+}

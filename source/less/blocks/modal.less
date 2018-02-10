@@ -1,0 +1,112 @@
+.modal-title {
+  width: 148px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-title {
+    min-width: 360px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+//
+.modal-button-order {
+  display: block;
+  width: 260px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #63d1bb;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-button-order {
+    min-width: 350px;
+  }
+}
+
+//
+.modal-order {
+  display: none;
+  width: 320px;
+  padding: 34px 30px 46px 30px;
+  box-sizing: border-box;
+}
+
+.modal-order__modal-title {
+  margin: 0;
+  padding: 0 55px 0 58px;
+  text-align: center;
+}
+
+.modal-order__choose-size {
+  margin-bottom: 16px;
+  padding: 0 55px 0 58px;
+  width: 137px;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-order__sizes {
+  .lists();
+  display: flex;
+}
+
+.modal-order__size {
+  display: block;
+  margin-bottom: 31px;
+  margin-right: 7px;
+  padding: 17px 32px 18px 32px;
+  width: 82px;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 3px solid #63d1bb;
+}
+
+.modal-order__size--L {
+  margin-right: 0;
+  border: 3px solid #ececec;
+}
+
+.modal-order__button-order {
+  padding: 18px 10px 18px 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-order {
+    width: 566px;
+    padding: 43px 106px 46px 106px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-order__modal-title {
+    padding: 0;
+  }
+
+  .modal-order__choose-size {
+    margin-bottom: 16px;
+    padding: 0 96px 0 100px;
+    width: 154px;
+    font-size: 17px;
+  }
+
+  .modal-order__size {
+    padding: 16px 46px 17px 45px;
+    width: 112px;
+  }
+}

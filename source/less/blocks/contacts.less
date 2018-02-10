@@ -1,0 +1,164 @@
+.our-contacts {
+  padding: 40px 30px 40px 30px;
+}
+
+.our-contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.our-contacts__addresses {
+  .lists();
+}
+
+.our-contacts__addresses__point {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.our-contacts__email {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.our-contacts__address {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.our-contacts__address--email {
+  margin-right: 0;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.our-contacts__address--fulladdress {
+  margin-right: 0;
+}
+
+.our-contacts__small-map {
+  margin: 0;
+  margin-left: -30px;
+  padding: 0;
+}
+
+.our-contacts__small-map-tablet {
+  display: none;
+}
+
+.our-contacts__small-map-desktop {
+  display: none;
+}
+
+.our-contacts__button-write-us {
+  margin: 0;
+  margin-top: 39px;
+  padding: 13px 10px 11px 10px;
+  width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .our-contacts {
+    padding: 46px 0 57px 0;
+  }
+
+  .our-contacts__title {
+    margin-bottom: 54px;
+    margin-left: 50px;
+  }
+
+  .our-contacts__addresses {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .our-contacts__addresses__point {
+    width: 334px;
+  }
+
+  .our-contacts__email {
+    width: 56px;
+  }
+
+  .our-contacts__address--email {
+    width: 211px;
+    text-decoration: underline;
+    border-bottom: none;
+  }
+
+  .our-contacts__address--fulladdress {
+    width: 222px;
+  }
+
+  .our-contacts__small-map {
+    margin-left: -50px;
+  }
+
+  .our-contacts__small-map-mobile {
+    display: none;
+  }
+
+  .our-contacts__small-map-tablet {
+    display: block;
+  }
+
+  .our-contacts__button-write-us {
+    margin-left: 270px;
+    padding: 16px 10px 15px 10px;
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .our-contacts {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 71px 0 106px 0;
+  }
+
+  .our-contacts__title {
+    margin-top: 90px;
+    margin-bottom: 61px;
+    margin-left: 0;
+    padding-right: 78px;
+  }
+
+  .our-contacts__addresses {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .our-contacts__addresses__point {
+    width: 301px;
+  }
+
+  .our-contacts__email {
+    width: 54px;
+  }
+
+  .our-contacts__address--email {
+    width: 205px;
+  }
+
+  .our-contacts__small-map {
+    margin-left: 0;
+  }
+
+  .our-contacts__small-map-tablet {
+    display: none;
+  }
+
+  .our-contacts__small-map-desktop {
+    display: block;
+  }
+
+  .our-contacts__button-write-us {
+    position: absolute;
+    bottom: 105px;
+    left: 175px;
+    margin-left: 0;
+  }
+}
