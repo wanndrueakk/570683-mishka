@@ -2,6 +2,7 @@
 var m = document.querySelector(".page-header__toggle");
 var menu = document.querySelector(".page-header__list--main-nav");
 var userBlock = document.querySelector(".page-header__user-block");
+var bc = document.querySelector(".btn--cart");
 
 
 m.addEventListener("click", function (event) {
@@ -10,4 +11,9 @@ m.addEventListener("click", function (event) {
   m.classList.toggle("page-header__toggle--opened");
   menu.classList.toggle("page-header__main-nav-show");
   userBlock.classList.toggle("page-header__main-nav-show");
+});
+
+bc.addEventListener("click", function (event) {
+  event.preventDefault();
+  console.log("cart");
 });
