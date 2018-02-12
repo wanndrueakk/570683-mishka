@@ -1,0 +1,172 @@
+.page-footer {
+  display: block;
+  background: #f1f1f1;
+}
+
+.page-footer__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background: #e5e5e5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social,
+.page-footer__copyright {
+  width: 100%;
+  height: 80px;
+}
+
+.social {
+  display: flex;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 145px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 0;
+}
+
+.social__item {}
+
+.social__icon {
+  display: inline-block;
+  font-size: 0;
+}
+
+.social__icon--facebook {
+  margin-top: 5px;
+}
+
+.social__icon--instagram {
+  margin-top: 10px;
+}
+
+.social__icon--twitter {
+  margin-right: 4px;
+  margin-top: 10px;
+}
+
+.social__icon:hover svg,
+.social__icon:focus svg {
+  fill: #46c1ae;
+}
+
+.social__icon:active svg {
+  opacity: 0.3;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__link {
+  display: flex;
+  width: 182px;
+  height: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-size: 19px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: -4px;
+}
+
+.copyright__link svg {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    margin: 0;
+  }
+
+  .page-footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
+    height: 144px;
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 185px;
+    font-size: 0;
+  }
+
+  .page-footer__logo svg {
+    //    margin-top: -10px;
+  }
+
+  .page-footer__logo:hover svg {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo:active svg {
+    opacity: 0.3;
+  }
+
+  .page-footer__social {
+    width: 142px;
+    height: 30px;
+  }
+  .page-footer__copyright {
+    width: 185px;
+    height: 36px;
+  }
+  .copyright__text {
+    font-size: 19px;
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__container {
+    width: 1050px;
+  }
+}
