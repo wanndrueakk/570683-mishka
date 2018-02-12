@@ -34,8 +34,18 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 6px;
-  background: url("../img/zigzag-line-desktop.png") repeat-x 0 0;
-  bottom: 0;
+  height: 6.535px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x 0 0;
+  background-size: contain;
+  bottom: -6px;
   left: 0;
+  @media (min-width: @tablet-width) {
+    background-position: 20px 100%;
+    height: 25px;
+    bottom: -27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 0;
+  }
 }
