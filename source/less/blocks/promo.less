@@ -1,0 +1,239 @@
+.promo {
+  display: block;
+  margin: 0 auto;
+  min-height: 489px;
+  background-repeat: no-repeat;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 50% -15%;
+  background-size: 575px 373px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
+.promo__header {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 122px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #010000;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: relative;
+    border-top: 1px solid #dfdfdf;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% -3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    background-size: 1150px 746px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 40px;
+      bottom: -13px;
+      left: 0px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center center;
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
+  }
+
+  .promo__header {
+    font-size: 43px;
+    line-height: 50px;
+    width: 560px;
+    margin: 0 auto;
+    padding-top: 151px;
+    padding-bottom: 374px;
+    padding-left: 7px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__container {
+    width: 1150px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .promo {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+
+    &::after {
+      background-size: auto 37px;
+      background-position: center top;
+      background-repeat: repeat-x;
+      bottom: -22px;
+      left: 0;
+      height: 50px;
+    }
+  }
+
+  .promo__header {
+    width: 700px;
+    padding-top: 152px;
+    padding-left: 10px;
+    padding-bottom: 360px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+/*/////////////////////////promo__categories*/
+
+.promo__categories {
+  width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+
+.promo__categories-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__categories-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 103px;
+  text-decoration: none;
+}
+
+.promo__categories-link span {
+  width: 170px;
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 30px 0;
+  margin-left: 29px;
+  margin-top: -3px;
+}
+
+.promo__categories-link svg {
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.promo__categories-link--interior {
+  background: #63d1bb;
+}
+
+.promo__categories-link--interior:hover {
+  background: #59d5bc;
+}
+
+.promo__categories-link--interior:active {
+  background: #59d5bc;
+}
+
+.promo__categories-link--toys {
+  background: #56c3b2;
+}
+
+.promo__categories-link--toys:hover {
+  background: #46c1ae;
+}
+
+.promo__categories-link--toys:active {
+  background: #46c1ae;
+}
+
+.promo__categories-link--interior svg {
+  width: 40px;
+  height: 62px;
+  margin-right: 36px;
+}
+
+.promo__categories-link--toys svg {
+  width: 60px;
+  height: 60px;
+  margin-right: 27px;
+}
+
+.promo__categories-link:hover svg {
+  opacity: 0.7;
+}
+
+.promo__categories-link:active svg {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__categories {
+    width: 668px;
+    margin-top: 0;
+  }
+
+  .promo__categories-list {
+    display: flex;
+  }
+
+  .promo__categories-link {
+    width: 334px;
+    height: 125px;
+  }
+  .promo__categories-link--toys svg {
+    margin-right: 34px;
+  }
+
+  .promo__categories-link span {
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+    margin-top: -8px;
+    margin-left: 36px;
+  }
+  .promo__categories-link:hover,
+  .promo__categories-link:focus {
+    transform: translateY(-5px);
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__categories {
+    width: 1050px;
+    margin-top: 0;
+  }
+
+  .promo__categories-link {
+    width: 525px;
+    height: 129px;
+  }
+
+  .promo__categories-link span {
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+    margin-top: -14px;
+  }
+}

@@ -1,0 +1,221 @@
+.reference {
+  position: relative;
+}
+
+.reference::after {
+  .divider;
+  bottom: -10px;
+}
+
+.reference__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 29px;
+  padding-bottom: 42px;
+  box-sizing: border-box;
+}
+
+.reference__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+
+.reference__item {
+  margin: 0;
+  line-height: 30px;
+}
+
+.reference__text {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.reference__author {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.reference__author-link {
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reference__author-link:hover {
+  color: #46c1ae;
+}
+
+.reference__author-link:active {
+  color: rgba(70, 192, 174, 0.3);
+}
+
+.reference__toggles {
+  margin-bottom: 36px;
+}
+
+.reference__btn {
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 37px;
+  padding-right: 42px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.reference__btn:hover polygon,
+.reference__btn:focus polygon {
+  fill: #666666;
+}
+
+.reference__btn:focus {
+  outline: none;
+}
+
+.reference__btn:active polygon {
+  fill: #b2b2b2;
+}
+
+.reference__btn:disabled polygon {
+  fill: #b2b2b2;
+}
+
+.reference__btn--next {
+  margin-left: -6px;
+}
+
+.reference__button {
+  font-size: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .reference::after {
+    .divider;
+  }
+  .reference__container {
+    width: 768px;
+    position: relative;
+    padding-top: 81px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+  .reference__button {
+    position: absolute;
+    display: inline-block;
+    width: 175px;
+    top: 83px;
+    right: 50px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: @retina-dpi),
+  (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+    .reference__container {
+      background-image: url("../img/review@2x.jpg");
+    }
+}
+
+@media (min-width: @tablet-width) {
+  .reference__title {
+    margin-bottom: 49px;
+    margin-left: -5px;
+    padding-right: 190px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reference__text {
+    margin-bottom: 55px;
+    font-size: 17px;
+  }
+
+  .reference__author {
+    font-size: 18px;
+  }
+
+  .reference__toggles {
+    position: absolute;
+    bottom: 77px;
+    right: 50px;
+  }
+
+  .reference__btn {
+    border: none;
+  }
+
+  .reference__btn--prev {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .reference__btn--next {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 18px;
+  }
+
+  .reference__write {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    padding: 14px 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reference::after {
+    height: 23px;
+    bottom: -71px;
+  }
+
+  .reference__container {
+    width: 1050px;
+    padding-top: 70px;
+    padding-left: 175px;
+    padding-right: 0;
+    padding-bottom: 82px;
+  }
+
+  .reference__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reference__text {
+    margin-bottom: 36px;
+    padding-right: 100px;
+  }
+
+  .reference__author {
+    font-size: 17px;
+  }
+
+  .reference__toggles {
+    right: -1px;
+  }
+
+  .reference__button {
+    width: 175px;
+    right: 0;
+  }
+}
