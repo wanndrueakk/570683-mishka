@@ -2,7 +2,8 @@
 var m = document.querySelector(".page-header__toggle");
 var menu = document.querySelector(".page-header__list--main-nav");
 var userBlock = document.querySelector(".page-header__user-block");
-var bc = document.querySelector(".btn--cart");
+var fb = document.querySelector(".featured__btn")
+var mw = document.querySelector(".modal")
 
 
 m.addEventListener("click", function (event) {
@@ -13,7 +14,24 @@ m.addEventListener("click", function (event) {
   userBlock.classList.toggle("page-header__main-nav-show");
 });
 
-bc.addEventListener("click", function (event) {
+fb.addEventListener("click", function (event) {
   event.preventDefault();
-  console.log("cart");
+  console.log("order");
+  mw.classList.toggle("modal__show");
 });
+
+//
+//var navMain = document.querySelector('.main-nav');
+//var navToggle = document.querySelector('.main-nav__toggle');
+//
+//navMain.classList.remove('main-nav--nojs');
+//
+//navToggle.addEventListener('click', function() {
+//  if (navMain.classList.contains('main-nav--closed')) {
+//    navMain.classList.remove('main-nav--closed');
+//    navMain.classList.add('main-nav--opened');
+//  } else {
+//    navMain.classList.add('main-nav--closed');
+//    navMain.classList.remove('main-nav--opened');
+//  }
+//});
