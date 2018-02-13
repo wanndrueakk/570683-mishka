@@ -50,21 +50,39 @@
           <span></span>
         </button>
         <ul class="page-header__list page-header__list--main-nav">
-          <li class="page-header__item"><a class="page-header__link page-header__link--catalog" href="catalog.html">Каталог товаров</a></li>
-          <li class="page-header__item page-header__item--knotting"><a class="page-header__link page-header__link--knotting" href="form.html">Вязание на заказ</a></li>
+          <li class="page-header__item"><a class="page-header__link page-header__link--catalog" href="catalog.html"><div>Каталог товаров</div></a></li>
+          <li class="page-header__item page-header__item--knotting"><a class="page-header__link page-header__link--knotting" href="form.html"><div>Вязание на заказ</div></a></li>
         </ul>
       </nav>
       <div class="page-header__user-block">
         <ul class="page-header__list page-header__list--user-block">
-          <li class="page-header__item page-header__item--search"><a class="page-header__link page-header__link--search" href="#"><span class="page-header__item-icon page-header__item-icon--search"></span>Поиск по сайту</a></li>
-          <li class="page-header__item page-header__item--cart"><a class="page-header__link page-header__link--cart" href="#"><span class="page-header__item-icon page-header__item-icon--cart"></span>Корзина: пока пуста</a></li>
+          <li class="page-header__item page-header__item--search">
+            <a class="page-header__link page-header__link--search" href="#">
+              <span class="page-header__item-icon page-header__item-icon--search">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                </svg>
+              </span>
+              <div>Поиск по сайту</div>
+            </a>
+          </li>
+          <li class="page-header__item page-header__item--cart">
+            <a class="page-header__link page-header__link--cart" href="#">
+              <span class="page-header__item-icon page-header__item-icon--cart">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                  <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                </svg>
+              </span>
+              <div>Корзина: пока пуста</div>
+            </a>
+          </li>
         </ul>
       </div>
       <span class="page-header__announce">Бесплатная доставка по России</span>
       <nav class="page-header__hot">
         <ul>
-          <li><a href="#">Новые постуления</a></li>
-          <li><a href="#">Распродажа</a></li>
+          <li><a href="#" class="page-header__small-link">Новые постуления</a></li>
+          <li><a href="#" class="page-header__small-link">Распродажа</a></li>
         </ul>
       </nav>
     </div>
@@ -144,7 +162,7 @@
           </a>
           <div class="featured__footer">
             <p class="featured__price">Цена: 990 руб.</p>
-            <a href="#" class="btn btn--action featured__btn">Заказать</a>
+            <a href="#" class="button featured__btn">Заказать</a>
           </div>
         </div>
       </div>
@@ -181,15 +199,15 @@
               </cite>
             </blockquote>
           </div>
-          <div class="reference__toggles slider__toggles">
-            <button class="reference__btn reference__btn--prev slider__btn slider__btn--prev" type="button">
+          <div class="reference__toggles">
+            <button class="reference__btn reference__btn--prev" type="button">
               <span class="visually-hidden">Предыдущий отзыв</span>
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
               </svg>
             </button>
-            <button class="reference__btn reference__btn--next slider__btn slider__btn--next" type="button">
+            <button class="reference__btn reference__btn--next" type="button">
               <span class="visually-hidden">Следующий отзыв</span>
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
@@ -198,7 +216,7 @@
             </button>
           </div>
         </div>
-        <a href="#" class="btn btn--action reference__write">Написать</a>
+        <a href="#" class="button reference__button">Написать</a>
       </div>
     </section>
     <!--      "Контакты"        -->
@@ -227,7 +245,7 @@
           <!-- <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда"> -->
         </div>
         <div class="contacts__btn-wrap">
-          <a href="feedback.html" class="btn btn--action contacts__btn">Напишите нам</a>
+          <a href="feedback.html" class="button contacts__btn">Напишите нам</a>
         </div>
       </div>
     </section>
