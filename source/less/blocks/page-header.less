@@ -1,15 +1,11 @@
-/* Файл blocks/page-header.less */
-
-//img {
-//  max-width: 100%;
-//  height: auto;
-//}
 .page-header {
   display: block;
   margin-bottom: 1px;
 }
 
 .page-header__container {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -19,6 +15,14 @@
   text-align: center;
   padding: 21px 0 18px;
   order: 1;
+}
+
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
 }
 
 .page-header__main-nav {
@@ -42,11 +46,11 @@
 
   .page-header__toggle {
     position: absolute;
-    display: inline-block;
+    display: flex;
     width: 20px;
     height: 14px;
     right: 30px;
-    top: 32px;
+    top: 30px;
     background: transparent;
     border: 0;
     padding: 0;
@@ -55,9 +59,11 @@
   }
 
   .page-header__toggle span {
-    position: relative;
-    display: block;
+    display: inline-block;
+    width: 100%;
     height: 2px;
+    margin: auto;
+    position: relative;
     background: #221f1f;
     transition: 0.3s ease-in-out;
   }
@@ -92,13 +98,13 @@
 
   .page-header__toggle--opened span::before {
     width: 26px;
-    transform: translate(-3px, 6px) rotate(45deg);
+    transform: translate(-13px, 6px) rotate(45deg);
     transition: 0.3s ease-in-out;
   }
 
   .page-header__toggle--opened span::after {
     width: 26px;
-    transform: translate(-3px, -6px) rotate(-45deg);
+    transform: translate(-13px, -6px) rotate(-45deg);
     transition: 0.3s ease-in-out;
   }
 
@@ -134,25 +140,42 @@
   font-weight: bold;
   color: black;
   text-decoration: none;
-  padding: 25px 0 29px 75px;
+  padding: 30px 0 31px 75px;
+}
+
+.page-header__link > span {
+  opacity: 0.2;
+}
+
+.page-header__link > div {
+  opacity: 1;
+}
+
+.page-header__link[href]:hover > div, .page-header__small-link:hover {
+  opacity: 0.6;
+}
+
+.page-header__link:hover > span {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.page-header__link[href]:active > div, .page-header__small-link:active {
+  opacity: 0.3;
+}
+
+.page-header__link:active > span {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .page-header__item-icon {
   position: absolute;
   display: inline-block;
   width: 21px;
-  height: 20px;
-  opacity: 0.8;
+  height: 20px; //  opacity: 0.8;
   left: 30px;
   top: 30px;
-}
-
-.page-header__item-icon--search {
-  background: url("../../img/icon-search.svg") no-repeat 0 0;
-}
-
-.page-header__item-icon--cart {
-  background: url("../../img/icon-cart.svg") no-repeat 0 0;
 }
 
 .page-header__announce {
@@ -162,7 +185,6 @@
 .page-header__hot {
   display: none;
 }
-
 
 @media (min-width: @tablet-width) {
   .page-header__container {
@@ -255,7 +277,7 @@
   }
 
   .page-header__item-icon--search {
-    left: 35px;
+    left: 29px;
     top: 35px;
   }
 

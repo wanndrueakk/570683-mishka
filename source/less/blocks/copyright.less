@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__link {
+  display: flex;
+  width: 182px;
+  height: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-size: 19px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: -4px;
+}
+
+.copyright__link svg {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    font-size: 19px;
+    color: #000000;
+    font-weight: bold;
+  }
+}

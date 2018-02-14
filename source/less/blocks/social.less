@@ -1,19 +1,42 @@
-
-//
-.social-contacts {
+.social {
   display: flex;
 }
 
-.social-contacts__button {
-  display: block;
-  margin: 0;
+.social__list {
+  list-style: none;
   padding: 0;
+  display: flex;
+  width: 145px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 0;
 }
 
-.social-contacts__button--insta {
-  margin-right: 40px;
+.social__icon {
+  display: inline-block;
+  font-size: 0;
 }
 
-.social-contacts__button--fb {
-  margin-right: 36px;
+.social__icon--facebook {
+  margin-top: 5px;
+}
+
+.social__icon--instagram {
+  margin-top: 10px;
+}
+
+.social__icon--twitter {
+  margin-right: 4px;
+  margin-top: 10px;
+}
+
+.social__icon:hover svg,
+.social__icon:focus svg {
+  fill: #46c1ae;
+}
+
+.social__icon:active svg {
+  opacity: 0.3;
 }
