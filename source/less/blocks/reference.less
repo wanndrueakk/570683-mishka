@@ -107,6 +107,7 @@
   .reference::after {
     .divider;
   }
+
   .reference__container {
     width: 768px;
     position: relative;
@@ -118,6 +119,7 @@
     background-repeat: no-repeat;
     background-size: 350px 457px;
   }
+
   .reference__button {
     position: absolute;
     display: inline-block;
@@ -128,11 +130,10 @@
   }
 }
 
-@media (min-width: @tablet-width) and (min-resolution: @retina-dpi),
-  (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
-    .reference__container {
-      background-image: url("../img/review@2x.jpg");
-    }
+@media (min-width: @tablet-width) and (min-resolution: @retina-dpi), (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+  .reference__container {
+    background-image: url("../img/review@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {

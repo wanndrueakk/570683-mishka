@@ -62,7 +62,13 @@
   top: 9px;
 }
 
-.form__input:hover + span {
+.form__input + span {
+  opacity: 0.2;
+}
+
+.form__input:hover + span,
+.form__input:active + span {
+  opacity: 1;
   fill: #62d1ba;
 }
 
@@ -632,7 +638,6 @@
     right: 23px;
     top: 11px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -790,7 +795,6 @@
     right: 3px;
     top: 11px;
   }
-
 }
 
 /*///////////////////////стилизация состояний при наведении и фокусе    */
