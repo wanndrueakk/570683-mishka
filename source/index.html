@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Мишка - интернет-магазин аксессуаров ручной работы для дома">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
+  <!--  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">-->
+  <!--  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">-->
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
+<!--
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("../img/scr/mishka-index-mobile.jpg");
+    }
+
+    /* Планшет */
+
+    @media (min-width: 768px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("../img/scr/mishka-index-tablet.jpg");
+      }
+    }
+
+    /* Десктоп */
+
+    @media (min-width: 1150px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("../img/scr/mishka-index-desktop.jpg");
+      }
+    }
+
+    body {
+      opacity: 0.7;
+    }
+
+  </style>
+-->
 </head>
+
 <body>
   <!--        Хедер     -->
   <header class="page-header">
@@ -26,8 +61,16 @@
           <span></span>
         </button>
         <ul class="page-header__list page-header__list--main-nav">
-          <li class="page-header__item"><a class="page-header__link page-header__link--catalog" href="catalog.html"><div>Каталог товаров</div></a></li>
-          <li class="page-header__item page-header__item--knotting"><a class="page-header__link page-header__link--knotting" href="form.html"><div>Вязание на заказ</div></a></li>
+          <li class="page-header__item">
+            <a class="page-header__link page-header__link--catalog" href="catalog.html">
+              <div>Каталог товаров</div>
+            </a>
+          </li>
+          <li class="page-header__item page-header__item--knotting">
+            <a class="page-header__link page-header__link--knotting" href="form.html">
+              <div>Вязание на заказ</div>
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="page-header__user-block">
@@ -132,7 +175,7 @@
           </a>
           <div class="featured__footer">
             <p class="featured__price">Цена: 990 руб.</p>
-            <a href="#" class="button featured__btn">Заказать</a>
+            <a href="#" class="button button--order featured__btn">Заказать</a>
           </div>
         </div>
       </div>
@@ -210,7 +253,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <!-- <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда"> -->
+          <div id="yandex-map" class="yandex-map"></div>
         </div>
         <div class="contacts__btn-wrap">
           <a href="feedback.html" class="button contacts__btn">Напишите нам</a>
@@ -269,17 +312,30 @@
   <!--         Модальное окно       -->
   <div class="modal">
     <div class="modal__wrap">
-      <h2 class="modal__title">Добавить <br>в корзину</h2>
-      <span class="modal__subtitle">Выберите размер:</span>
-      <div class="modal__sizes">
-        <span class="modal__btn-size  button">S</span>
-        <span class="modal__btn-size  button">M</span>
-        <span class="modal__btn-size  button">L</span>
-      </div>
-      <button type="button" class="modal__button button">Добавить</button>
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
+        <span class="modal__subtitle">Выберите размер:</span>
+        <div class="modal__sizes">
+          <div class="modal__option">
+            <input id="size-s" type="radio" class="modal__input" name="size" value="size-s" checked>
+            <label class="modal__btn-size " for="size-s">S</label>
+          </div>
+          <div class="modal__option">
+            <input id="size-m" type="radio" class="modal__input" name="size" value="size-m">
+            <label class="modal__btn-size " for="size-m">M</label>
+          </div>
+          <div class="modal__option">
+            <input id="size-l" type="radio" class="modal__input" name="size" value="size-l">
+            <label class="modal__btn-size" for="size-l">L</label>
+          </div>
+        </div>
+        <button type="submit" class="modal__button">Добавить</button>
+      </form>
     </div>
   </div>
-  <script src="js/picturefill.min.js"></script>
+  <!--  <script src="js/picturefill.min.js"></script>-->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/my.js"></script>
 </body>
+
 </html>
