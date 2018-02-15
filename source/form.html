@@ -7,8 +7,29 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Страница формы</title>
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("../img/scr/mishka-form-mobile.jpg");
+      }
+      @media (min-width: 768px) {
+        html {
+          background-image: url("../img/scr/mishka-form-tablet.jpg");
+        }
+      }
+      @media (min-width: 1150px) {
+        html {
+          background-image: url("../img/scr/mishka-form-desktop.jpg");
+        }
+      }
+      body {
+        opacity: 0.7;
+      }
+    </style>
   </head>
   <body>
+    <!--          Хедер       -->
     <header class="page-header">
       <div class="page-header__container">
         <a href="index.html" class="page-header__logo">
@@ -60,7 +81,7 @@
         </nav>
       </div>
     </header>
-
+    <!--          Главная       -->
     <main class="page-form">
       <h2 class="page-form__promo">Вязание на заказ</h2>
       <div class="page-form__intro-text">
@@ -153,8 +174,8 @@
             <div class="form__title  form__title--email">E-mail</div>
             <div class="form__input-wrap  form__input-wrap--email">
               <div class="form__row form__row--email">
-                <label for="text-phone"  class="visually-hidden">E-mail:</label>
-                <input type="email" id="text-phone" name="email" placeholder="Ваш Email*" class="form__input form__input--email" required>
+                <label for="email"  class="visually-hidden">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ваш Email*" class="form__input form__input--email" required>
                 <span>
                   <svg width="32px" height="32px">
                     <use xlink:href="img/sprite.svg#envelope"></use>
@@ -180,7 +201,6 @@
         </div>
       </form>
     </main>
-
     <!--          Футер       -->
     <footer class="page-footer">
       <div class="page-footer__container">
