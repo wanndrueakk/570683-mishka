@@ -8,7 +8,6 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
-<!--
   <style>
     html {
       background-repeat: no-repeat;
@@ -29,7 +28,6 @@
       opacity: 0.7;
     }
   </style>
--->
 </head>
 <body>
   <!--          Хедер       -->
@@ -47,7 +45,7 @@
             <span></span>
           </button>
         <ul class="page-header__list page-header__list--main-nav">
-          <li class="page-header__item">
+          <li class="page-header__item page-header__item--border">
             <a class="page-header__link page-header__link--catalog">
               <div>Каталог товаров</div>
             </a>
@@ -160,7 +158,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-              <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Карточка товара" width="333" height="333">
+              <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Карточка товара">
             </picture>
           </a>
           <div class="product__info">
@@ -283,7 +281,8 @@
       </form>
     </div>
   </div>
-<!--  <script src="js/picturefill.min.js"></script>-->
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/my.js"></script>
 </body>

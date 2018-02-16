@@ -113,6 +113,18 @@
   .page-header__main-nav-show {
     display: block;
   }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__list--main-nav {
+    display: block;
+  }
+
+  .page-header__user-block.page-header--nojs {
+    display: block;
+  }
 }
 
 .page-header__user-block {
@@ -345,14 +357,22 @@
     margin-left: 33px;
   }
 
-  .page-header__item--knotting {
-    margin-left: 70px;
-  }
-
   .page-header__link--knotting,
   .page-header__link--catalog {
     font-size: 17px;
     padding: 35px 0 30px;
+  }
+
+  .page-header__link--catalog {
+    margin-right: 36px;
+  }
+
+  .page-header__link--knotting {
+	margin-right: 34px;
+  }
+
+  .page-header__item--border {
+    border-right: 1px solid #e7e7e7;
   }
 
   .page-header__hot {

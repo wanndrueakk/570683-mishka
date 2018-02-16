@@ -27,7 +27,7 @@
       }
     }
     body {
-      opacity: 0.7;
+      opacity: 0.3;
     }
   </style>
 -->
@@ -44,12 +44,12 @@
           <img src="img/logo-mobile.svg" alt="Логотип">
         </picture>
       </a>
-      <nav class="page-header__main-nav main-nav  main-nav--closed  main-nav--nojs">
+      <nav class="page-header__main-nav main-nav page-header--nojs">
         <button type="button" class="page-header__toggle">
           <span></span>
         </button>
         <ul class="page-header__list page-header__list--main-nav">
-          <li class="page-header__item">
+          <li class="page-header__item page-header__item--border">
             <a class="page-header__link page-header__link--catalog" href="catalog.html">
               <div>Каталог товаров</div>
             </a>
@@ -61,7 +61,7 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__user-block">
+      <div class="page-header__user-block page-header--nojs">
         <ul class="page-header__list page-header__list--user-block">
           <li class="page-header__item page-header__item--search">
             <a class="page-header__link page-header__link--search" href="#">
@@ -321,7 +321,8 @@
       </form>
     </div>
   </div>
-<!--  <script src="js/picturefill.min.js"></script>-->
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/my.js"></script>
 </body>
