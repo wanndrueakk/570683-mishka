@@ -20,15 +20,15 @@
 }
 
 .form__fieldset--name {
-  padding: 0 0 17px 0;
+  padding: 0 0 42px 0;
 }
 
 .form__fieldset:nth-child(4) {
-  padding: 14px 0 41px 0;
+  padding: 14px 0 28px 0;
 }
 
 .form__fieldset:nth-child(5) {
-  padding: 0 0 41px 0;
+  padding: 0 0 28px 0;
 }
 
 .form__fieldset--add {
@@ -38,6 +38,7 @@
 .form__group-wrap {
   display: flex;
   flex-wrap: nowrap;
+  font-size: 0;
 }
 
 .form__group-wrap--name {
@@ -104,8 +105,9 @@
 }
 
 .form__title--email {
-  margin-top: -10px;
-  margin-bottom: 5px;
+  margin-top: -12px;
+  margin-bottom: 7px;
+  width: 83px;
 }
 
 .form__title--add {
@@ -125,8 +127,9 @@
   width: 197px;
 }
 
-.form__input-wrap--add {
-  flex-direction: column;
+.form__input-wrap--name {
+  height: 250px;
+  justify-content: space-between;
 }
 
 .form__row {
@@ -145,9 +148,15 @@
 }
 
 .form__row--name {
-  width: auto;
+  justify-content: space-between;
+  height: 69px;
   flex-direction: column;
   align-items: stretch;
+}
+
+.form__row--phone,
+.form__row--email {
+  height: 63px;
 }
 
 .form__row--textarea {
@@ -162,7 +171,6 @@
 }
 
 .form__label {
-  display: inline-block;
   margin: 0 25px 23px 0;
   font-size: 17px;
   line-height: 18px;
@@ -197,12 +205,11 @@
   text-align: left;
   border: 0;
   background: transparent;
-  padding: 15px 15px 16px 0;
+  padding-bottom: 16px;
   border-bottom: 2px solid #000000;
 }
 
 .form__input--name {
-  margin-bottom: 23px;
   width: auto;
 }
 
@@ -354,7 +361,7 @@
   }
 
   .form__fieldset:nth-child(3) {
-    padding: 37px 0 39px 0;
+    padding: 37px 0 35px 0;
   }
 
   .form__fieldset:nth-child(4) {
@@ -443,6 +450,7 @@
   }
 
   .form__input-wrap--name {
+    height: 230px;
     flex-direction: row;
   }
 
@@ -479,6 +487,11 @@
   .form__row--name {
     flex-direction: row;
     align-items: middle;
+  }
+
+  .form__row--phone,
+  .form__row--email {
+    height: 56px;
   }
 
   .form__row--textarea {
@@ -786,6 +799,10 @@
   .form__close {
     justify-content: space-between;
     padding: 0 225px 0 225px;
+  }
+
+  .form__close small {
+    margin-bottom: 0;
   }
 
   /*  //////////////////////иконки телефона и мейла
