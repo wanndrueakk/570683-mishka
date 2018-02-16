@@ -7,8 +7,29 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Страница формы</title>
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("../img/scr/mishka-form-mobile.jpg");
+      }
+      @media (min-width: 768px) {
+        html {
+          background-image: url("../img/scr/mishka-form-tablet.jpg");
+        }
+      }
+      @media (min-width: 1150px) {
+        html {
+          background-image: url("../img/scr/mishka-form-desktop.jpg");
+        }
+      }
+      body {
+        opacity: 0.7;
+      }
+    </style>
   </head>
   <body>
+    <!--          Хедер       -->
     <header class="page-header">
       <div class="page-header__container">
         <a href="index.html" class="page-header__logo">
@@ -23,8 +44,16 @@
             <span></span>
           </button>
           <ul class="page-header__list page-header__list--main-nav">
-            <li class="page-header__item"><a class="page-header__link page-header__link--catalog" href="catalog.html"><div>Каталог товаров</div></a></li>
-            <li class="page-header__item page-header__item--knotting"><a class="page-header__link page-header__link--knotting"><div>Вязание на заказ</div></a></li>
+            <li class="page-header__item page-header__item--border">
+              <a class="page-header__link page-header__link--catalog" href="catalog.html">
+                <div>Каталог товаров</div>
+              </a>
+            </li>
+            <li class="page-header__item page-header__item--knotting">
+              <a class="page-header__link page-header__link--knotting">
+                <div>Вязание на заказ</div>
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="page-header__user-block">
@@ -60,7 +89,7 @@
         </nav>
       </div>
     </header>
-
+    <!--          Главная       -->
     <main class="page-form">
       <h2 class="page-form__promo">Вязание на заказ</h2>
       <div class="page-form__intro-text">
@@ -137,7 +166,7 @@
             <div class="form__title form__title--phone">Тел</div>
             <div class="form__input-wrap form__input-wrap--text">
               <div class="form__row form__row--phone">
-                <label for="text-phone"  class="visually-hidden">Телефон:</label>
+                <label for="text-phone"  class="form__label--hidden">Телефон:</label>
                 <input type="tel" id="text-phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*" pattern="(\+?\d[- .]*){7,13}" class="form__input form__input--phone">
                 <span>
                   <svg width="24.829px" height="24.333px">
@@ -153,8 +182,8 @@
             <div class="form__title  form__title--email">E-mail</div>
             <div class="form__input-wrap  form__input-wrap--email">
               <div class="form__row form__row--email">
-                <label for="text-phone"  class="visually-hidden">E-mail:</label>
-                <input type="email" id="text-phone" name="email" placeholder="Ваш Email*" class="form__input form__input--email" required>
+                <label for="email"  class="form__label--hidden">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ваш Email*" class="form__input form__input--email" required>
                 <span>
                   <svg width="32px" height="32px">
                     <use xlink:href="img/sprite.svg#envelope"></use>
@@ -180,7 +209,6 @@
         </div>
       </form>
     </main>
-
     <!--          Футер       -->
     <footer class="page-footer">
       <div class="page-footer__container">
@@ -229,6 +257,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
     <script src="js/my.js"></script>
   </body>
 </html>
