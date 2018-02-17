@@ -5,39 +5,18 @@
   <meta name="description" content="Мишка - интернет-магазин аксессуаров ручной работы для дома">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <!--  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">-->
-  <!--  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
-<!--
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("../img/scr/mishka-index-mobile--menu.jpg");
-    }
-    @media (min-width: 768px) {
-      html {
-        background-image: url("../img/scr/mishka-index-tablet.jpg");
-      }
-    }
-    @media (min-width: 1150px) {
-      html {
-        background-image: url("../img/scr/mishka-index-desktop.jpg");
-      }
-    }
-    body {
-      opacity: 0.3;
-    }
-  </style>
--->
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <!--        Хедер     -->
   <header class="page-header">
     <div class="page-header__container">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -64,20 +43,20 @@
       <div class="page-header__user-block page-header--nojs">
         <ul class="page-header__list page-header__list--user-block">
           <li class="page-header__item page-header__item--search">
-            <a class="page-header__link page-header__link--search" href="#">
+            <a class="page-header__link page-header__link--search" href="search.html">
               <span class="page-header__item-icon page-header__item-icon--search">
-                <svg width="17.6px" height="17.6px">
-                  <use xlink:href="img/sprite.svg#magnifier"></use>
+                <svg width="18" height="19">
+                  <use xlink:href="#ico-search"></use>
                 </svg>
               </span>
               <div>Поиск по сайту</div>
             </a>
           </li>
           <li class="page-header__item page-header__item--cart">
-            <a class="page-header__link page-header__link--cart" href="#">
+            <a class="page-header__link page-header__link--cart" href="cart.html">
               <span class="page-header__item-icon page-header__item-icon--cart">
                 <svg width="20.294px" height="18.849px">
-                  <use xlink:href="img/sprite.svg#cart"></use>
+                  <use xlink:href="#ico-cart"></use>
                 </svg>
               </span>
               <div>Корзина: пока пуста</div>
@@ -108,7 +87,7 @@
             <a href="interior.html" class="promo__categories-link promo__categories-link--interior">
               <span>Предметы интерьера</span>
               <svg width="40.219px" height="62.411px">
-                <use xlink:href="img/sprite.svg#lamp"></use>
+                <use xlink:href="#ico-interior"></use>
               </svg>
             </a>
           </li>
@@ -116,7 +95,7 @@
             <a href="children.html" class="promo__categories-link promo__categories-link--toys">
               <span>Детские игрушки</span>
               <svg width="60px" height="59.62px">
-                <use xlink:href="img/sprite.svg#brick"></use>
+                <use xlink:href="#ico-toy"></use>
               </svg>
             </a>
           </li>
@@ -129,7 +108,7 @@
         <div class="featured__wrap">
           <div class="featured__title">
             <h2>
-              <a href="#" class="featured__link">Вязаные корзинки</a>
+              <a href="featured.html" class="featured__link">Вязаные корзинки</a>
             </h2>
             <span class="featured__label">Товар недели</span>
           </div>
@@ -154,7 +133,7 @@
               </div>
             </div>
           </div>
-          <a href="#" class="featured__img">
+          <a href="featured.html" class="featured__img">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
@@ -163,7 +142,7 @@
           </a>
           <div class="featured__footer">
             <p class="featured__price">Цена: 990 руб.</p>
-            <a href="#" class="button button--order featured__btn">Заказать</a>
+            <a href="order.html" class="button button--order featured__btn">Заказать</a>
           </div>
         </div>
       </div>
@@ -204,13 +183,13 @@
             <button class="reference__btn reference__btn--prev" type="button">
               <span class="visually-hidden">Предыдущий отзыв</span>
               <svg width="50px" height="26.003px">
-                <use xlink:href="img/sprite.svg#arrow-left"></use>
+                <use xlink:href="#ico-left-arrow"></use>
               </svg>
             </button>
             <button class="reference__btn reference__btn--next" type="button">
               <span class="visually-hidden">Следующий отзыв</span>
               <svg width="50px" height="26px">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
+                <use xlink:href="#ico-right-arrow"></use>
               </svg>
             </button>
           </div>
@@ -230,7 +209,7 @@
             </div>
             <div class="contacts__row">
               <div class="contacts__field">e-mail:</div>
-              <div class="contacts__value"><a class="contacts__email" href="#">info@mimimishkashop.ru</a></div>
+              <div class="contacts__value"><a class="contacts__email" href="email:info@mimimishkashop.ru">info@mimimishkashop.ru</a></div>
             </div>
             <div class="contacts__row">
               <div class="contacts__field">адрес:</div>
@@ -254,8 +233,8 @@
     <div class="page-footer__container">
       <a href="index.html" class="page-footer__logo">
         Логотип магазина "Мишка"
-        <svg width="101.615px" height="34.056px">
-          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        <svg class="page-footer__svg" width="101.615px" height="34.056px">
+          <use xlink:href="#ico-logo-footer"></use>
         </svg>
       </a>
       <div class="page-footer__social social">
@@ -265,7 +244,7 @@
             <a class="social__icon social__icon--instagram" href="instagram.html">
               Инстаграм
               <svg width="21.769px" height="21.334px">
-                <use xlink:href="img/sprite.svg#instagram"></use>
+                <use xlink:href="#ico-insta"></use>
               </svg>
             </a>
           </li>
@@ -273,7 +252,7 @@
             <a class="social__icon social__icon--facebook" href="facebook.html">
               Фейсбук
               <svg width="14.962px" height="27.718px">
-                <use xlink:href="img/sprite.svg#facebook"></use>
+                <use xlink:href="#ico-fb"></use>
               </svg>
             </a>
           </li>
@@ -281,7 +260,7 @@
             <a class="social__icon social__icon--twitter" href="twitter.html">
               Твиттер
               <svg width="23.494px" height="20.168px">
-                <use xlink:href="img/sprite.svg#twitter"></use>
+                <use xlink:href="#ico-twitter"></use>
               </svg>
             </a>
           </li>
@@ -291,7 +270,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">Разработано</b>
           <svg width="26.943px" height="34.09px">
-            <use xlink:href="img/sprite.svg#ha-logo"></use>
+            <use xlink:href="#ico-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -322,7 +301,6 @@
     </div>
   </div>
   <script src="js/picturefill.min.js"></script>
-  <script src="js/svgxuse.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/my.js"></script>
 </body>
