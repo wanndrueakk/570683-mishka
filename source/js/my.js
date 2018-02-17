@@ -57,5 +57,3 @@ if(yandexMap !== null) {
       .add(myPlacemark);
   });
 }
-
-
