@@ -78,11 +78,19 @@
 .product__btn {
   width: 21px;
   height: 19px;
+  padding: 0;
+  border: 0;
 }
 
 .product__btn svg {
   fill: #cccccc;
   pointer-events: none;
+}
+
+.product__btn:hover,
+.product__btn:focus,
+.product__btn:active {
+  background-color: transparent;
 }
 
 .product__btn:hover svg,

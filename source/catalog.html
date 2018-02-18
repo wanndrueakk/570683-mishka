@@ -6,6 +6,8 @@
   <meta name="description" content="Мишка - интернет-магазин аксессуаров ручной работы для дома">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -23,28 +25,28 @@
           <img src="img/logo-mobile.svg" alt="Логотип">
         </picture>
       </a>
-      <nav class="page-header__main-nav main-nav  main-nav--closed  main-nav--nojs">
-        <button type="button" class="page-header__toggle">
+      <nav class="page-header__main-nav main-nav main-nav--nojs">
+        <button type="button" class="main-nav__toggle">
             <span></span>
           </button>
-        <ul class="page-header__list page-header__list--main-nav">
-          <li class="page-header__item page-header__item--border">
-            <a class="page-header__link page-header__link--catalog">
+        <ul class="main-nav__list main-nav__list--main-nav">
+          <li class="main-nav__item main-nav__item--border">
+            <a class="main-nav__link main-nav__link--catalog">
               <div>Каталог товаров</div>
             </a>
           </li>
-          <li class="page-header__item page-header__item--knotting">
-            <a class="page-header__link page-header__link--knotting" href="form.html">
+          <li class="main-nav__item main-nav__item--knotting">
+            <a class="main-nav__link main-nav__link--knotting" href="form.html">
               <div>Вязание на заказ</div>
             </a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__user-block">
-        <ul class="page-header__list page-header__list--user-block">
-          <li class="page-header__item page-header__item--search">
-            <a class="page-header__link page-header__link--search" href="search.html">
-                <span class="page-header__item-icon page-header__item-icon--search">
+      <div class="page-header__user-block main-nav main-nav--nojs">
+        <ul class="main-nav__list main-nav__list--user-block">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="search.html">
+                <span class="main-nav__item-icon main-nav__item-icon--search">
                   <svg width="18" height="19">
                     <use xlink:href="#ico-search"></use>
                   </svg>
@@ -52,9 +54,9 @@
                 <div>Поиск по сайту</div>
               </a>
           </li>
-          <li class="page-header__item page-header__item--cart">
-            <a class="page-header__link page-header__link--cart" href="cart.html">
-                <span class="page-header__item-icon page-header__item-icon--cart">
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link main-nav__link--cart" href="cart.html">
+                <span class="main-nav__item-icon main-nav__item-icon--cart">
                   <svg width="20.294px" height="18.849px">
                     <use xlink:href="#ico-cart"></use>
                   </svg>
@@ -67,7 +69,7 @@
       <span class="page-header__announce">Бесплатная доставка по России</span>
       <nav class="page-header__hot">
         <ul>
-          <li><a href="new.html" class="page-header__small-link">Новые постуления</a></li>
+          <li><a href="new.html" class="page-header__small-link">Новые поступления</a></li>
           <li><a href="sale.html" class="page-header__small-link">Распродажа</a></li>
         </ul>
       </nav>
@@ -99,9 +101,9 @@
               <p class="product__price">
                 <b>1 200 руб.</b>
               </p>
-              <a href="order.html" class="product__btn">
+              <a href="order.html" class="button button--order product__btn">
                   <span class="visually-hidden">Купить</span>
-                  <svg width="20.294px" height="18.849px" class="button--order">
+                  <svg width="20.294px" height="18.849px">
                     <use xlink:href="#ico-cart"></use>
                   </svg>
                 </a>
@@ -127,9 +129,9 @@
               <p class="product__price">
                 <b>690 руб.</b>
               </p>
-              <a href="order.html" class="product__btn">
+              <a href="order.html" class="button button--order product__btn">
                   <span class="visually-hidden">Купить</span>
-                  <svg width="20.294px" height="18.849px" class="button--order">
+                  <svg width="20.294px" height="18.849px">
                     <use xlink:href="#ico-cart"></use>
                   </svg>
                 </a>
@@ -155,9 +157,9 @@
               <p class="product__price">
                 <b>1 500 руб.</b>
               </p>
-              <a href="order.html" class="product__btn">
+              <a href="order.html" class="button button--order product__btn">
                   <span class="visually-hidden">Купить</span>
-                  <svg width="20.294px" height="18.849px" class="button--order">
+                  <svg width="20.294px" height="18.849px">
                     <use xlink:href="#ico-cart"></use>
                   </svg>
                 </a>
@@ -173,7 +175,7 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
             </picture>
-            <button class="btn video-post__btn" type="button">
+            <button class="video-post__btn" type="button">
                 <svg width="100.678px" height="76.891px">
                   <use xlink:href="#ico-play"></use>
                 </svg>

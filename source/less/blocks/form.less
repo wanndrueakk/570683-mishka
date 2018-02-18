@@ -192,10 +192,6 @@
   text-align: left;
 }
 
-.form__label--hidden {
-  font-size: 0;
-}
-
 .form__input {
   flex-grow: 1;
   font-size: 17px;
@@ -211,6 +207,7 @@
 
 .form__input--name {
   width: auto;
+  padding-top: 16px;
 }
 
 .form__input:hover,
@@ -513,7 +510,7 @@
   .form__input--checkbox,
   .form__input--radio {
     position: absolute;
-    display: none;
+    opacity: 0;
   }
 
   .form__label {
@@ -817,5 +814,3 @@
     top: 11px;
   }
 }
-
-/*///////////////////////стилизация состояний при наведении и фокусе    */

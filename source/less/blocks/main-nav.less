@@ -1,0 +1,261 @@
+/*-----крестик и гамбургер------*/
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1px;
+}
+
+.main-nav__item {
+  display: block;
+  position: relative;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  margin-top: -1px;
+}
+
+.main-nav__link {
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  padding: 30px 0 31px 75px;
+}
+
+.main-nav__link > span {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.main-nav__link > div {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.main-nav__link[href]:hover > div, .page-header__small-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:hover > span {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__link[href]:active > div, .page-header__small-link:active {
+  opacity: 0.3;
+}
+
+.main-nav__link:active > span {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
+.main-nav__item-icon {
+  position: absolute;
+  display: inline-block;
+  width: 21px;
+  height: 20px; //  opacity: 0.8;
+  left: 30px;
+  top: 30px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__list--main-nav {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 14px;
+    right: 30px;
+    top: 30px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+  .main-nav__toggle span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    background: #221f1f;
+    transition: 0.3s ease-in-out;
+  }
+
+  .main-nav__toggle span::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: #221f1f;
+    top: -6px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .main-nav__toggle span::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: #221f1f;
+    top: 6px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .main-nav__toggle--opened span {
+    width: 0;
+  }
+
+  .main-nav__toggle--opened span::before {
+    width: 26px;
+    transform: translate(-13px, 6px) rotate(45deg);
+    transition: 0.3s ease-in-out;
+  }
+
+  .main-nav__toggle--opened span::after {
+    width: 26px;
+    transform: translate(-13px, -6px) rotate(-45deg);
+    transition: 0.3s ease-in-out;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list--main-nav {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    font-size: 0;
+  }
+
+  .main-nav__list--user-block {
+    justify-content: space-between;
+    height: 88px;
+  }
+
+  .main-nav__list--main-nav {
+    height: 40px;
+  }
+
+  .main-nav__item {
+    font-size: 17px;
+    display: flex;
+    align-items: stretch;
+    border: 0;
+  }
+
+  .main-nav__item--search {
+    width: 82px;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+  }
+
+  .main-nav__item--cart {
+    width: 235px;
+  }
+
+  .main-nav__item--knotting {
+    margin-left: 37px;
+  }
+
+  .main-nav__link {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .main-nav__link--search,
+  .main-nav__link--cart {
+    text-align: right;
+    font-size: 17px;
+    padding: 35px 0 30px;
+  }
+
+  .main-nav__link--search {
+    font-size: 0;
+    width: 82px;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+  }
+
+  .main-nav__link--knotting,
+  .main-nav__link--catalog {
+    font-size: 15px;
+    padding: 21px 0 0 0;
+  }
+
+  .main-nav__item-icon--search {
+    left: 29px;
+    top: 35px;
+  }
+
+  .main-nav__item-icon--cart {
+    left: 0;
+    top: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__list--main-nav {
+    height: 88px;
+  }
+
+  .main-nav__list--user-block {
+    margin-left: 60px;
+  }
+
+  .main-nav__item--cart {
+    width: 235px;
+    margin-left: 33px;
+  }
+
+  .main-nav__item--knotting {
+    margin-left: 33px;
+  }
+
+  .main-nav__link--knotting,
+  .main-nav__link--catalog {
+    font-size: 17px;
+    padding: 35px 0 30px;
+  }
+
+  .main-nav__link--catalog {
+    margin-right: 36px;
+  }
+
+  .main-nav__link--knotting {
+    margin-right: 34px;
+  }
+
+  .main-nav__item--border {
+    border-right: 1px solid #e7e7e7;
+  }
+}

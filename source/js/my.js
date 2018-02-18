@@ -1,14 +1,14 @@
 var pageHeader = document.querySelector(".page-header__main-nav");
-var menuToggle = document.querySelector(".page-header__toggle");
-var menu = document.querySelector(".page-header__list--main-nav");
+var menuToggle = document.querySelector(".main-nav__toggle");
+var menu = document.querySelector(".main-nav__list--main-nav");
 var userBlock = document.querySelector(".page-header__user-block");
 
-pageHeader.classList.remove("page-header--nojs");
-userBlock.classList.remove("page-header--nojs");
+pageHeader.classList.remove("main-nav--nojs");
+userBlock.classList.remove("main-nav--nojs");
 
 menuToggle.addEventListener("click", function (event) {
   event.preventDefault();
-  menuToggle.classList.toggle("page-header__toggle--opened");
+  menuToggle.classList.toggle("main-nav__toggle--opened");
   menu.classList.toggle("page-header__main-nav-show");
   userBlock.classList.toggle("page-header__main-nav-show");
 });
@@ -44,15 +44,15 @@ if(yandexMap !== null) {
     }, {
       searchControlProvider: "yandex#search"
     }),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: "Собственный значок метки",
-          balloonContent: "Это красивая метка"
-        }, {
-          iconLayout: "default#image",
-          iconImageHref: "./img/icon-map-pin.svg",
-          iconImageSize: [66, 100],
-          iconImageOffset: [-35, -100]
-        });
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: "Собственный значок метки",
+        balloonContent: "Это красивая метка"
+      }, {
+        iconLayout: "default#image",
+        iconImageHref: "./img/icon-map-pin.svg",
+        iconImageSize: [66, 100],
+        iconImageOffset: [-35, -100]
+      });
     myMap.geoObjects
       .add(myPlacemark);
   });
